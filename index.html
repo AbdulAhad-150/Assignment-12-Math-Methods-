@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Methods</title>
+</head>
+<body>
+    <script>
+        
+        // Question 1
+
+//         Write a program that takes a positive integer from user &
+// display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+        
+        // Answer 1
+const number_1 = prompt("Enter Number in positive integer");
+document.write (`</br>Number : ${number_1} </br> round off value :`+ Math.round(number_1)+"</br>Floor value :"+Math.floor(number_1)+"</br> Ceil value :"+Math.ceil(number_1));
+
+
+        // Question 2
+
+//         Write a program that takes a negative floating point
+// number from user & display the following in your browser.
+// a. number
+// b. round off value of the number
+// c. floor value of the number
+// d. ceil value of the number
+
+        // Answer 2
+
+const number_2 = prompt("Enter Number in negative integer");
+document.write (`</br> Number : ${number_2} </br> round off value : `+ Math.round(number_2)+"</br> Floor value : " + Math.floor(number_2)+"</br> Ceil value : " + Math.ceil(number_2));
+
+
+        // Question 3
+// Write a program that displays the absolute value of a
+// number.
+// E.g. absolute value of -4 is 4 & absolute value of 5 is 5
+
+        // Answer 3
+
+document.write(`</br>The absolute value of -4 is ` + Math.abs(-4));
+
+        // Question 4
+
+// Write a program that simulates a dice using random()
+// method of JS Math class. Display the value of dice in your
+// browser.:
+
+        // Answer 4
+var randomNum = Math.random();
+var improveNum =(randomNum*6)+1
+var finalnum = Math.floor(improveNum)
+document.write(`</br>random dice value 1ST: ${finalnum}</br>random dice value 2ND: ${finalnum}`);
+
+        // Question 5
+
+//         Write a program that simulates a coin toss using random()
+// method of JS Math class. Display the value of coin in your
+// browser
+
+        // Answer 5
+var num_3 = Math.random();
+var num_4 = (num_3*2)+1
+var num_5 = Math.floor(num_4)
+if(num_5==2){
+        document.write("It's Head ")
+}else{
+        document.write("It's Tail")
+}
+document.write (`</br>${num_5}`)
+
+        // Question 6
+
+//         Write a program that shows a random number between 1
+// and 100 in your browser.
+
+        // Answer 6
+
+var num_6 = Math.round(Math.random()*100)
+document.write(`</br>random number between 1 and 100 : ${num_6}`)
+
+
+        // Question 7
+
+//         Write a program that asks the user about his weight. Parse
+// the user input and display his weight in your browser.
+// Possible user inputs can be:
+// a. 50
+// b. 50kgs
+// c. 50.2kgs
+// d. 50.2kilograms
+
+        // Answer 7     
+
+ var weight = prompt("Enter your weight");
+ document.write (`</br>The User Weight is ${weight} Kilograms `)
+
+
+        // Question 8
+
+//         Write a program that stores a random secret number from
+// 1 to 10 in a variable. Ask the user to input a number
+// between 1 and 10. If the user input equals the secret
+// number, congratulate the user.
+
+        // Answer 8
+
+const userInput = prompt("Enter number under 1 to 10");
+const randNum = Math.round(Math.random()*10);
+
+if(userInput==randNum){
+        document.write("</br>Congratulate for correct number")
+}else{
+        document.write("</br>Try again next time")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
